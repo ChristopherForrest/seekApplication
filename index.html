@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Seek Application</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+</head>
+<body>
+    <div id="viewForm">
+        <form class="formTitle"> Your Name & Address</form>
+         <table style="width:580px;">
+             <tr>
+                <td align="left">Name:</td>
+                <td align = "left"><input readonly id="nameSave"></td>
+                <td align = "center" class="help">?<span>Your name</span></td>
+             </tr>
+                <tr>
+                    <td class="padder"></td>
+                </tr>
+             <tr>
+                <td align="left">Address:</td>
+                <td align = "left">
+                    <input id="addressSave" readonly>
+                    <textarea readonly id="a" style="display:none;"></textarea>
+                </td>
+                <td align = "center" class="help">?<span>Your address</span></td>
+             </tr>
+             <tr>
+                    <td class="padder"></td>
+                </tr>
+             <tr>
+                <td align="left">Email:</td>
+                <td align = "left"><input readonly id="emailSave"></td>
+                <td align = "center" class="help">?<span>Your email address</span></td>
+            </tr>
+            <tr>
+                    <td class="padder"></td>
+                </tr>
+            <tr>
+                <td align="left">Phone Number:</td>
+                <td align = "left"><input readonly id="phoneSave"></td>
+                <td align = "center" class="help">?<span>Your phone number</span></td>
+            </tr>
+            <tr>
+                <td align="left"><button class="editButton" onclick="editForm()">Edit Details</button></td>
+            </tr>
+        </form>
+    </table>
+    </div>
+    
+    <div id="editFormOuter">
+        <div id ="editFormInner">
+            <div class="editFormOption" id="optionName" onclick="nameActive()">Name</div>
+            <div class="editFormOption" id="optionAddress" onclick="addressActive()">Address</div>
+            <div class="editFormFields">
+                <table style="width:400px;" class="editTable" id="nameTable">
+                    <tr>
+                        <td align="left">Title:</td>
+                        <td align = "left"><input id="title"></td>
+                    </tr>
+                    <tr>
+                            <td class="padder"></td>
+                    </tr>
+                    <tr>
+                            <td align="left">First Name:</td>
+                            <td align = "left"><input id="firstName"></td>
+                            
+                    </tr>
+                    <tr>
+                            <td class="padder"></td>
+                    </tr>
+                    <tr>
+                            <td align="left">Surname:</td>
+                            <td align = "left"><input id="lastName"></td>
+                    </tr>
+                    <tr>
+                            <td class="padder"></td>
+                    </tr>
+                    <tr>
+                            <td align="left">Email Address:</td>
+                            <td align = "left"><input id="emailAddress"></td>
+                    </tr>
+                    <tr>
+                            <td class="padder"></td>
+                    </tr>
+                    <tr>
+                            <td align="left">Phone Number:</td>
+                            <td align = "left"><input id="phoneNumber"></td>
+                    </tr>
+                    <tr>
+                            <td align="left"><button class="submitButton" onclick="save()">Save</button></td>
+                    </tr>
+                </table>
+                <table style="width:400px;" class="editTable" id="addressTable">
+                        <tr>
+                            <td align="left">Line 1:</td>
+                            <td align = "left"><input id="line1"></td>
+                        </tr>
+                        <tr>
+                                <td class="padder"></td>
+                        </tr>
+                        <tr>
+                                <td align="left">Line 2:</td>
+                                <td align = "left"><input id="line2"></td>
+                        </tr>
+                        <tr>
+                                <td class="padder"></td>
+                        </tr>
+                        <tr>
+                                <td align="left">Suburb:</td>
+                                <td align = "left"><input id="suburb"></td>
+                        </tr>
+                        <tr>
+                                <td class="padder"></td>
+                        </tr>
+                        <tr>
+                                <td align="left">State:</td>
+                                <td align = "left"><input id="state"></td>
+                        </tr>
+                        <tr>
+                                <td class="padder"></td>
+                        </tr>
+                        <tr>
+                                <td align="left">Postcode:</td>
+                                <td align = "left"><input id="postCode"></td>
+                        </tr>
+                        <tr>
+                                <td class="padder"></td>
+                        </tr>
+                        <tr>
+                                <td align="left">Country:</td>
+                                <td align = "left"><input id="country"></td>
+                        </tr>
+                        <tr>
+                                <td align="left"><button class="submitButton" onclick="save()">Save</button></td>
+                        </tr>
+                    </table> 
+            </div>
+       </div>
+    </div>
+</body>
+</html>
+
